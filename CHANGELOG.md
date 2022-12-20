@@ -1,7 +1,9 @@
-# v0.1.1 (Tue Sep 03 2019)
+# v1.0.0 (Tue Dec 20 2022)
 
-- Created first version of the design system, with `Avatar`, `Badge`, `Button`, `Icon` and `Link` components.
+- Created first version of the design system, with `Button`, `Checkbox`,
+  `Loader` components.
 - Babel fixes
 
 #### Authors: 1
-- Tom Coleman ([@tmeasday](https://github.com/tmeasday))
+
+- Vadym Sabadosh ([@vadimsabadosh](https://github.com/vadimsabadosh))
