@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -20,20 +16,16 @@
     // "noEmit": true,
     "baseUrl": "./",
     // "rootDir": ".",                   /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
-    "outDir": "lib",
-    "jsx": "react",          
-    "declaration": true,
-    "paths": {
-      "packages/": ["src/packages/*"],
-      "sass/": ["src/sass/*"],
-    }
+    "outDir": "./dist/",
+    "jsx": "react",
+    "declaration": true
   },
   "include": ["src"],
   "exclude": [
     "node-modules",
-    "build",
+    "dist",
     "src/packages/**/tests/*.spec.tsx",
     "src/packages/**/tests/*.test.tsx",
-    "src/packages/**/stories/*.stories.tsx",
-  ],
+    "src/packages/**/stories/*.stories.tsx"
+  ]
 }

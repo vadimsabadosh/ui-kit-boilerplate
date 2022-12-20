@@ -1,0 +1,47 @@
+.btn {
+	border-radius: 4px;
+	padding: 10px 16px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: -0.02em;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+}
+.outlined {
+	border: 1px solid #4a93d6;
+	background: #fff;
+	color: #4a93d6;
+}
+.primary {
+	background: #4a93d6;
+	color: #ffffff;
+	line-height: 20px;
+}
+.primary:disabled {
+	background: #98a1aa;
+	color: #d8dcdf;
+}
+.secondary {
+	background: #1a3f6b;
+	color: #ffffff;
+}
+.danger {
+	background: #de4548;
+	color: #ffffff;
+	line-height: 20px;
+}
+.empty {
+	color: #519bde;
+	background: none;
+}
+.empty:disabled {
+	background: #f8f9fb;
+	color: #98a1aa;
+}
+._block {
+	display: block;
+	width: 100%;
+}

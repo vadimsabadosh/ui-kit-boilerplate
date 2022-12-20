@@ -1,10 +1,9 @@
 {
-  "name": "thenriquedb-learnstorybook-design-system",
+  "name": "ui-kit-boilerplate",
   "version": "0.1.1",
-  "description": "My first NPM package!",
-  "repository": "git@github.com:thenriquedb/sass-storybook-quickstart.git",
-  "author": "thiago <thenrique2012@gmail.com>",
-  "license": "MIT",
+  "description": "Boilerplate for React UI Kit",
+  "author": "Vadym Sabadosh <vadym.sabadosh@anvileight.com>",
+  "license": "ISC",
   "main": "./dist/index.js",
   "private": false,
   "dependencies": {
@@ -19,7 +18,8 @@
     "lint": "eslint src --max-warnings=0",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "deploy-storybook:ghpages": "storybook-to-ghpages"
+    "deploy-storybook:ghpages": "storybook-to-ghpages",
+    "pub": "npx webpack && npm version patch && npm publish"
   },
   "browserslist": {
     "production": [
@@ -37,14 +37,16 @@
     "@babel/cli": "^7.12.10",
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
-    "@storybook/addon-actions": "^6.1.11",
-    "@storybook/addon-essentials": "^6.1.11",
-    "@storybook/addon-links": "^6.1.11",
-    "@storybook/node-logger": "^6.1.11",
-    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-essentials": "^6.5.14",
+    "@storybook/addon-links": "^6.5.14",
+    "@storybook/builder-webpack5": "^6.5.14",
+    "@storybook/manager-webpack5": "^6.5.14",
+    "@storybook/node-logger": "^6.5.14",
+    "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/preset-scss": "^1.0.3",
-    "@storybook/react": "^6.1.11",
-    "@storybook/storybook-deployer": "^2.8.7",
+    "@storybook/react": "^6.5.14",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -56,9 +58,7 @@
     "@types/react-dom": "^16.9.8",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.11.1",
-    "auto": "^10.10.0",
     "babel-loader": "^8.2.2",
-    "cross-env": "^7.0.3",
     "css-loader": "^5.0.1",
     "eslint": "^7.17.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -70,14 +70,25 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
     "eslint-plugin-testing-library": "^3.10.1",
-    "node-sass": "4.12",
-    "prettier": "^2.2.1",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.8.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
+    "react-scripts": "^5.0.1",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
+    "ts-loader": "^9.4.2",
     "typescript": "^4.0.3",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "classnames": "*"
   }
 }
